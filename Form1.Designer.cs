@@ -108,6 +108,8 @@
         private System.Windows.Forms.TextBox txtFlag;
         private System.Windows.Forms.TextBox txtScore;
         private System.Windows.Forms.PictureBox explode;
+        public System.Windows.Forms.Label label1;
+        public System.Windows.Forms.Label label2;
     }
 }
 
