@@ -30,6 +30,7 @@ namespace Minesweep
             GenerateMines();
             GeneratePositionValue();
             GenerateButton();
+            btn_restart_Click(btn_restart, EventArgs.Empty);
         }
 
         Random rnd = new Random();
@@ -38,8 +39,8 @@ namespace Minesweep
             int mines = 30;
             while(mines != 0)
             {
-                int x = rnd.Next(1, 15);
-                int y = rnd.Next(1, 15);
+                int x = rnd.Next(0, 15);
+                int y = rnd.Next(0, 15);
                 if (Positions[x,y] == 0)
                 {
                     Positions[x,y] = 10;
@@ -212,7 +213,7 @@ namespace Minesweep
                 {
                     int checkY = y + countY;
 
-                    //cell out of bound, avoid checking these cells
+                    //Cell out of bound, avoid checking these cells
                     if (checkX < 0 || checkY < 0 || checkX > 14 || checkY > 14) continue;
 
                     if (checkX == x && checkY == y) continue;
@@ -220,6 +221,8 @@ namespace Minesweep
                     Button btnAdjacent = ButtonList[checkX, checkY];
 
                     if (btnAdjacent == null) continue;
+                    //Advoid opening cells with flag
+                    if (btnAdjacent.Image != null && btnAdjacent.Image == Properties.Resources.flag) continue;
 
                     if (btnAdjacent.Tag == null || !btnAdjacent.Tag.ToString().Contains(","))
                     {
@@ -301,7 +304,7 @@ namespace Minesweep
                 }
             }
             txtScore.Text = "0";
-            txtFlag.Text = "30";
+            //txtFlag.Text = "30";
             panel1.Controls.Clear();
             panel1.Enabled = true;
             ButtonList = new Button[15, 15];
