@@ -1,0 +1,10 @@
+C:\Users\kient\source\repos\Minesweep\bin\Debug\Minesweep.exe.config
+C:\Users\kient\source\repos\Minesweep\bin\Debug\Minesweep.exe
+C:\Users\kient\source\repos\Minesweep\bin\Debug\Minesweep.pdb
+C:\Users\kient\source\repos\Minesweep\obj\Debug\Minesweep.csproj.AssemblyReference.cache
+C:\Users\kient\source\repos\Minesweep\obj\Debug\Minesweep.Form1.resources
+C:\Users\kient\source\repos\Minesweep\obj\Debug\Minesweep.Properties.Resources.resources
+C:\Users\kient\source\repos\Minesweep\obj\Debug\Minesweep.csproj.GenerateResource.cache
+C:\Users\kient\source\repos\Minesweep\obj\Debug\Minesweep.csproj.CoreCompileInputs.cache
+C:\Users\kient\source\repos\Minesweep\obj\Debug\Minesweep.exe
+C:\Users\kient\source\repos\Minesweep\obj\Debug\Minesweep.pdb
